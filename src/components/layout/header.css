@@ -2,8 +2,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100px;
-  background-color: antiquewhite;
+  height: 110px;
+  border-bottom: 1px solid #999;
 }
 
 .header .nav-top {
@@ -48,9 +48,11 @@
 }
 
 .nav-main{
-  padding-top: 35px;
+  margin-top:10px;
+  padding-top: 40px;
   position: relative;
   display: flex;
+  align-items:center;
 }
 
 .nav-main h1{
@@ -58,24 +60,62 @@
   margin-right: 50px;
 }
 
-.nav-main-list-right{
+.nav-main-list-left{
   display: flex;
-  line-height: 2;
+  margin-top:5px;
 }
 
-.nav-main-list-right li{
+
+.nav-main-list-left li{
   margin-right:20px;
 }
 
-.nav-main-list-right li a{
+.nav-main-list-left li a{
   padding:8px 12px;
   background-color: transparent;
   border-radius: 5px;
 }
-.nav-main-list-right li a:hover{
+.nav-main-list-left li a:hover{
   background-color: #999;
 }
 
-.nav-main-list-left{
+.nav-main-list-right{
+  position: absolute;
+  top:40px;
+  right:0;
   display: flex;
+}
+
+.nav-main-list-right li:first-child{
+  padding:12px 25px;
+  background-color: antiquewhite;
+  border-radius: 30px;
+  cursor:pointer;
+  line-height: 1;
+  margin-right: 10px;
+  font-size: 0.9em;
+}
+
+
+.nav-main-list-right li:first-child:hover{
+  font-weight: 500;
+  background-color: rgb(253, 217, 169);
+}
+
+
+.nav-main-list-right li:last-child{
+  position: relative;
+  padding-top: 6px;
+}
+
+
+.nav-main-list-right li span.count-num{
+  background-color: red;
+  border-radius: 50%;
+  font-size: 0.3em;
+  color: #fff;
+  padding:5% 10%;
+  position: absolute;
+  top:5px;
+  right:0;
 }

@@ -17,17 +17,16 @@ const Header = () => {
           <div className='nav-main'>
             <h1>로고</h1>
           
-            <ul className='nav-main-list-right'>
+            <ul className='nav-main-list-left'>
               <li><a href='/'>홈</a></li>
               <li><a href='/'>매칭하기</a></li>
               <li><a href='/'>시설예약</a></li>
               <li><a href='/'>레슨예약</a></li>
             </ul>
 
-            <ul className='nav-main-list-left'>
+            <ul className='nav-main-list-right'>
               <li><p><a href='/'>매칭만들기</a></p></li>
-              <li><p><a href='/'><span class="material-symbols-outlined">notifications</span></a></p></li>
-              <li><p><span>0</span></p></li>
+              <li><p><a href='/'><span class="material-symbols-outlined">notifications</span></a></p><span className='count-num'>0</span></li>
             </ul>
 
           </div>
