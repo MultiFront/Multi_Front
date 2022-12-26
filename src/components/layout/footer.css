@@ -5,12 +5,9 @@
   width: 100%;
   height: 80px;
   margin: auto;
-  background-color: rgb(196, 195, 195);
 }
 
 .footer-service{
-  position: absolute;
-  left: 250px;
 }
 
 .footer-service ul{
@@ -34,24 +31,24 @@
 
 .footer-bottom{
   background-color: white;
-  height: 30px;
+  height: 40px;
   display: flex;
   align-items: center;
 }
 
-.footer-logo{
+.letpl{
   float: left;
-  margin-left: 100px;
 }
 
-.letpl{
-  margin-left: 100px;
+.footer-logo{
+  float: left;
 }
 
 .footer-info{
   display: flex;
   height: 50px;
   align-items: center;
+  background-color: rgb(196, 195, 195);
 }
 
 .footer-last ul{

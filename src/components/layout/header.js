@@ -4,7 +4,7 @@ import './common.css'
 const Header = () => {
 
   return(
-      <header className='header'>
+      <header className='header inner'>
         <div>
           <div className='nav-top'>
             <ul>
