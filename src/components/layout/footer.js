@@ -1,4 +1,5 @@
 import './footer.css'
+import './common.css'
 
 const Footer = () => {
 

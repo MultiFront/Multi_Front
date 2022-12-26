@@ -2,6 +2,8 @@ import React from 'react';
 import Footer from './footer';
 import Header from './header';
 import "./layout.css"
+import './common.css'
+
 
 const Layout = () => {
 

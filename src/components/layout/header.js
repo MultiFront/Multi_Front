@@ -1,4 +1,5 @@
 import './header.css'
+import './common.css'
 
 const Header = () => {
 
@@ -15,7 +16,7 @@ const Header = () => {
           </div>
           <div className='nav-main'>
             <h1>로고</h1>
-          
+
             <ul className='nav-main-list-right'>
               <li><a href='/'>홈</a></li>
               <li><a href='/'>매칭하기</a></li>
