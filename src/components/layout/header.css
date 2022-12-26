@@ -5,6 +5,7 @@
   height: 100px;
   background-color: antiquewhite;
 }
+
 .header .nav-top {
   position: absolute;
   top:10px;
@@ -44,4 +45,37 @@
 
 .header .nav-top ul li:last-child:after{
   display: none;
+}
+
+.nav-main{
+  padding-top: 35px;
+  position: relative;
+  display: flex;
+}
+
+.nav-main h1{
+  font-size: 2em;
+  margin-right: 50px;
+}
+
+.nav-main-list-right{
+  display: flex;
+  line-height: 2;
+}
+
+.nav-main-list-right li{
+  margin-right:20px;
+}
+
+.nav-main-list-right li a{
+  padding:8px 12px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.nav-main-list-right li a:hover{
+  background-color: #999;
+}
+
+.nav-main-list-left{
+  display: flex;
 }

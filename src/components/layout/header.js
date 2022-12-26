@@ -4,8 +4,8 @@ import './common.css'
 const Header = () => {
 
   return(
-      <header className='header inner'>
-        <div>
+      <header className='header'>
+        <div className='inner'>
           <div className='nav-top'>
             <ul>
               <li><a href='/'>공지사항</a></li>
@@ -16,7 +16,7 @@ const Header = () => {
           </div>
           <div className='nav-main'>
             <h1>로고</h1>
-
+          
             <ul className='nav-main-list-right'>
               <li><a href='/'>홈</a></li>
               <li><a href='/'>매칭하기</a></li>
