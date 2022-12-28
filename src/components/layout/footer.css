@@ -1,13 +1,11 @@
 .footer{
   color:#666;
   font-size: 0.8em;
-  position: fixed;
   width: 100%;
   height: 80px;
   margin: auto;
-}
-
-.footer-service{
+  position: absolute;
+  bottom: 0;
 }
 
 .footer-service ul{
@@ -32,7 +30,6 @@
 .footer-bottom{
   background-color: white;
   height: 40px;
-  display: flex;
   align-items: center;
 }
 
