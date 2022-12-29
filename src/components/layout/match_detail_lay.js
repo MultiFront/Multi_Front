@@ -30,7 +30,7 @@ const Match_detail_lay = () => {
         <Match_category/>
 
         <h4 style="margin-bottom: 7px;">시설예약 비용</h4>
-        <div style="font-size: x-large; color:rgb(232, 13, 13);">30,000 &#9원/시간</div>
+        <div>30,000 &#9원/시간</div>
         
         <Hr/>
 

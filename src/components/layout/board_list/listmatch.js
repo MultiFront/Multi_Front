@@ -10,7 +10,7 @@ const Match = () => {
         <span className="deadline">마감일</span>
         <span className="num-people">인원수</span>
         <p className="favorite">
-            <span class="material-symbols-outlined fill">favorite</span>
+            <span className="material-symbols-outlined fill">favorite</span>
           </p>
       </li>
     </ul>

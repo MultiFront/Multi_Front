@@ -9,7 +9,7 @@ const Facility = () => {
       <p></p>
       <span className="">지역시</span> 
       <p className="favorite">
-        <span class="material-symbols-outlined">favorite</span>
+        <span className="material-symbols-outlined">favorite</span>
       </p>
     </div>
   )

@@ -17,8 +17,8 @@ const Matching = () => {
             <span className="time">시간</span>
           </p>
           <p className="favorite">
-            <span class="material-symbols-outlined">favorite</span>
-            <span class="material-symbols-outlined fill">favorite</span>
+            <span className="material-symbols-outlined">favorite</span>
+            <span className="material-symbols-outlined fill">favorite</span>
           </p>
       </div>
   )

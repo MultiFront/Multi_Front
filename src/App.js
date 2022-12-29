@@ -3,6 +3,7 @@ import './App.css';
 import './reset.css';
 import Layout from './components/layout/layout';
 import Match_detail_lay from './components/layout/match_detail_lay';
+import Notice from './components/layout/notice'
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -12,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout/>}/>
+          <Route path='/notice' element={<Notice/>}/>
           <Route path='/match_detail_lay' element={<Match_detail_lay/>}/>
         </Routes>
       </BrowserRouter>
