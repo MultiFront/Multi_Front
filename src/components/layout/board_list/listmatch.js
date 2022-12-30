@@ -12,8 +12,11 @@ const Match = () => {
           <span className="num-people">인원수</span>
         </div>
         <p className="favorite">
-            <span className="material-symbols-outlined fill">favorite</span>
+<<<<<<<<< Temporary merge branch 1
               <span class="material-symbols-outlined fill">favorite</span>
+=========
+            <span className="material-symbols-outlined fill">favorite</span>
+>>>>>>>>> Temporary merge branch 2
           </p>
       </li>
     </ul>
