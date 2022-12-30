@@ -7,6 +7,8 @@ import Sport_type from './matching_detail/sport-type'
 import Hr from './matching_detail/hr'
 import Match_category from './matching_detail/match_category'
 import Info from './matching_detail/info'
+import Cost from './matching_detail/cost'
+import Favourite from './matching_detail/favourite'
 
 import './common.css'
 import '../layout/match_detail_lay.css'
@@ -20,50 +22,42 @@ const Match_detail_lay = () => {
     <Header/>
 
     <main className="main">
-
-        <Hr/>
+        <div className='main-content'>
 
         <Sport_type/>
-        <h3 style="margin-bottom: 5px;">제목이 나오는 영역</h3>
-        <h5 style="margin-bottom: 30px;">작성자(닉네임)</h5>
+        <Sport_type/>
+
+        <h2>제목이 나오는 영역</h2>
+        <h5 style={{marginBottom: '30px'}}>작성자(닉네임)</h5>
 
         <Match_category/>
 
-        <h4 style="margin-bottom: 7px;">시설예약 비용</h4>
-        <div>30,000 &#9원/시간</div>
-        
+        <h4 style={{marginBottom: '7px'}}>시설예약 비용</h4>
+        <Cost/>
         <Hr/>
-
         <Info/>
-
         <Hr/>
-
         <Info/>
-
         <Hr/>
 
-        <h4 style="margin: 40px auto;">댓글(20)</h4>
+        <h4 style={{margin: '40px auto'}}>댓글(20)</h4>
 
-        <div className="comment">
-            <Comment/>
-            <Comment/>
-            <Comment/>
-            <Comment/>
-        </div>
+            <div className="comment">
+                <Comment/>
+                <Comment/>
+                <Comment/>
+                <Comment/>
+            </div>
+    </div>
 
     <div className="main-banner">
-        <span className="material-symbols-outlined">
-            favorite
-         </span>
-        
-        <Main_banner/>
-
-        <Main_banner/>
-
+    <Favourite/>
+    <Main_banner/>
+    <Main_banner/>
     </div>
 
     </main>
-
+    
     <Footer/>
 
     </div>

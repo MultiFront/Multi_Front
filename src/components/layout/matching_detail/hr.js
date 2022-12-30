@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hr() {
   return (
-      <hr className="main-content"/>
+      <hr style={{width: '760px'}}/>
   )
 }
 
