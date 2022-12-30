@@ -36,7 +36,16 @@ const Layout = () => {
           <div className='matching'>
             <p className='match-b-title'>랫플 매칭이 총 000건 성사 되었습니다!</p>
               <Category />
-              <Matching />
+              <div className='match-list-div'>
+                <Matching />
+                <Matching />
+                <Matching />
+                <Matching />
+                <Matching />
+                <Matching />
+                <Matching />
+              </div>
+            
             <p className='match-btn'>매칭하러가기 +</p>
           </div>
          
@@ -45,14 +54,28 @@ const Layout = () => {
             <div className='inner'>
               <h3>평점 좋은 시설</h3>
                 <Category />
-                <Facility />
+                <div className='match-list-div'>
+                  <Facility />
+                  <Facility />
+                  <Facility />
+                  <Facility />
+                  <Facility />
+                  <Facility />
+                </div>
             </div>
           </div>
           {/* 메인 레슨 리스트 영역 */}
           <div className='inner'>
             <h3>마감 직전 레슨</h3>
               <Category />
-              <Lesson />
+              <div className='match-list-div'>
+                <Lesson />
+                <Lesson />
+                <Lesson />
+                <Lesson />
+                <Lesson />
+                <Lesson />
+              </div>
           </div>
 
 
@@ -60,7 +83,15 @@ const Layout = () => {
            <div className='bg'>
             <div className='inner'>
               <h3>신규 매칭</h3>
-              <Match />
+              <ul className="listmatch">
+                <Match />
+                <Match />
+                <Match />
+                <Match />
+                <Match />
+                <Match />
+                <Match />
+              </ul>
             </div>
           </div>
         </main>

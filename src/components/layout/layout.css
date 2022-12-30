@@ -1,6 +1,5 @@
 .main{
   margin-top:200px;
-  height: 500px;
 }
 
 
@@ -54,12 +53,23 @@
   margin-bottom:30px;
 }
 
+.match-list-div{
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+
 .match-list{
+  flex:none;
   width: 200px;
   background-color: #eee;
   padding: 25px 10px;
   position: relative;
-  margin:30px 0px;
+  margin:30px 15px 30px 0px;
+}
+
+.matching .match-list:last-child{
+  margin-right:0px;
 }
 
 .match-list p span, .sports-category, .fac-review, .listmatch div > span{
@@ -111,6 +121,7 @@
 
 
 .match-btn{
+  clear: both;
   padding: 20px;
   background-color: antiquewhite;
   width: 140px;
@@ -154,6 +165,7 @@
 /*  */
 
 .bg{
+  margin-top:80px;
   width: 100%;
   background-color: #eee;
   padding: 50px 0px;
@@ -174,6 +186,7 @@
 /* 시설 */
 
 .facility, .lesson{
+  flex:none;
   margin:30px 15px 30px 0px;
   width: 265px;
   position: relative;
@@ -230,6 +243,7 @@
   width: 100%;
   padding:20px 20px;
   background-color: #fff;
+  margin-bottom: 10px;
 }
 
 .listmatch li div{
@@ -252,7 +266,7 @@
   height: 10px;
   background-color: #999;
   position:absolute;
-  top: 5px;
+  top: 8px;
   bottom: 0;
   margin-left: 8px;
 }

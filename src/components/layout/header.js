@@ -20,14 +20,14 @@ const Header = () => {
           
             <ul className='nav-main-list-left'>
               <li><a href='/'>홈</a></li>
-              <li><a>매칭하기</a></li>
+              <li><a href='/'>매칭하기</a></li>
               <li><a href='/'>시설예약</a></li>
               <li><a href='/'>레슨예약</a></li>
             </ul>
 
             <ul className='nav-main-list-right'>
               <Link to={'/match_detail_lay'}><li><p>매칭만들기</p></li></Link>
-              <li><p><a href='/'><span className="material-symbols-outlined">notifications</span></a></p><span className='count-num'>0</span></li>
+              <li><p className='bell'><a href='/'><span className="material-symbols-outlined">notifications</span></a></p><span className='count-num'>10</span></li>
             </ul>
 
           </div>

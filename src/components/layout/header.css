@@ -94,7 +94,7 @@
   background-color: antiquewhite;
   border-radius: 30px;
   cursor:pointer;
-  line-height: 1;
+  line-height: 24px;
   margin-right: 10px;
   font-size: 0.9em;
 }
@@ -103,6 +103,7 @@
 .nav-main-list-right li:first-child:hover{
   font-weight: 500;
   background-color: rgb(253, 217, 169);
+
 }
 
 
@@ -114,11 +115,16 @@
 
 .nav-main-list-right li span.count-num{
   background-color: red;
-  border-radius: 50%;
-  font-size: 0.3em;
+  font-size: 0.09em;
   color: #fff;
-  padding:5% 10%;
+  padding:2px 3px;
   position: absolute;
   top:5px;
-  right:0;
+  right:10%;
+  border-radius: 18px;
+  letter-spacing: 0;
+}
+
+.nav-main-list-right li:last-child p.bell{
+  margin-right:10px;
 }
