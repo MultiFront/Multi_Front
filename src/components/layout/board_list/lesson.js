@@ -2,7 +2,6 @@ import "../layout.css"
 
 const Lesson = () => {
   return(
-<<<<<<<<< Temporary merge branch 1
     <div className="lesson">
       <p className="img"><span className="sports-category">테니스</span></p>
       <div>
@@ -13,7 +12,6 @@ const Lesson = () => {
           <span class="material-symbols-outlined">favorite</span>
         </p>
       </div>
-=========
     <div>
       <p>이미지영역<span>4/5</span></p>
       <p>시설 이름을 두줄 까지 나타내는 걸로 구현하고 싶습니다.</p>
@@ -22,7 +20,7 @@ const Lesson = () => {
       <p className="favorite">
         <span className="material-symbols-outlined">favorite</span>
       </p>
->>>>>>>>> Temporary merge branch 2
+    </div>
     </div>
   )
 }

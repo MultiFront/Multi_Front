@@ -15,14 +15,11 @@ const Matching = () => {
           <div className="match-date">
             <span className="date">날짜</span>
             <span className="time">시간</span>
-<<<<<<<<< Temporary merge branch 1
-=========
-          </p>
+          </div>
           <p className="favorite">
             <span className="material-symbols-outlined">favorite</span>
             <span className="material-symbols-outlined fill">favorite</span>
           </p>
->>>>>>>>> Temporary merge branch 2
       </div>
   )
 
