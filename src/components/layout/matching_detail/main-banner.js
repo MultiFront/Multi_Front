@@ -3,7 +3,7 @@ import React from 'react'
 function Main_banner() {
   return (
     <div>
-        <button className="check-display">시설확정</button>
+        <div className="check-display">시설확정</div>
         <h3 style={{marginBottom: '10px'}}>시설명 영역</h3>
         <div style={{marginBottom: '3px'}}>경기도 부천시 어쩌구 주소</div>
         <div style={{marginBottom: '15px'}}><a href="#">길찾기 &gt;</a></div>

@@ -21,7 +21,7 @@ const Match_detail_lay = () => {
 
     <Header/>
 
-    <main className="main">
+    <main className="main inner">
         <div className='main-content'>
 
         <Sport_type/>
@@ -57,7 +57,7 @@ const Match_detail_lay = () => {
     </div>
 
     </main>
-    
+
     <Footer/>
 
     </div>

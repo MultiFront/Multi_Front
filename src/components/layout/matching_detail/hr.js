@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hr() {
   return (
-      <hr style={{width: '760px'}}/>
+      <hr/>
   )
 }
 
