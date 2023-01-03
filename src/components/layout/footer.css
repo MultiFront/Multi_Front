@@ -3,19 +3,20 @@
   font-size: 0.8em;
   width: 100%;
   height: 80px;
-  margin-top: 1200px;
-  clear: both;
-  bottom: 0;
+  margin: 0 auto;
   position: relative;
+  line-height: 35px;
 }
 
 .footer-service ul{
   display: flex;
+
 }
 
 .footer-service ul li{
   padding: 0 15px;
   position: relative;
+
 }
 
 .footer-service ul li::after{
@@ -45,12 +46,12 @@
 .footer-info{
   display: flex;
   height: 50px;
+  align-items: center;
   background-color: rgb(196, 195, 195);
 }
 
 .footer-last ul{
   display: flex;
-  line-height: 55px;
 }
 
 .footer-last ul li{

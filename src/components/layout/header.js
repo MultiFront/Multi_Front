@@ -8,7 +8,7 @@ const Header = () => {
         <div className='inner'>
           <div className='nav-top'>
             <ul>
-              <Link to={'/notice'}><li>공지사항</li></Link>
+              <Link to={'/'}><li>공지사항</li></Link>
               <Link to={'/'}><li>고객센터</li></Link>
               <Link to={'/'}><li>로그인</li></Link>
               <Link to={'/'}><li>회원가입</li></Link>
@@ -19,10 +19,10 @@ const Header = () => {
             <h1>로고</h1>
           
             <ul className='nav-main-list-left'>
-              <li><a href='/'>홈</a></li>
-              <li><a href='/'>매칭하기</a></li>
-              <li><a href='/'>시설예약</a></li>
-              <li><a href='/'>레슨예약</a></li>
+              <Link to={'/'}><li>홈</li></Link>
+              <Link to={'/'}><li>매칭하기</li></Link>
+              <Link to={'/'}><li>시설예약</li></Link>
+              <Link to={'/lesson_detail_lay'}><li>레슨예약</li></Link>
             </ul>
 
             <ul className='nav-main-list-right'>

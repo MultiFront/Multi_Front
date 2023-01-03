@@ -1,6 +1,4 @@
 import React from 'react'
-import Footer from './footer'
-import Header from './header'
 import Comment from './matching_detail/comment'
 import Main_banner from './matching_detail/main-banner'
 import Sport_type from './matching_detail/sport-type'
@@ -18,8 +16,6 @@ import '../layout/match_detail_lay.css'
 const Match_detail_lay = () => {
   return (
     <div className='match_detail_lay'>
-
-    <Header/>
 
     <main className="main inner">
         <div className='main-content'>
@@ -57,8 +53,6 @@ const Match_detail_lay = () => {
     </div>
 
     </main>
-
-    <Footer/>
 
     </div>
 
