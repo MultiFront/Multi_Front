@@ -1,6 +1,6 @@
 import React from 'react'
 import Comment from './matching_detail/comment'
-import Main_banner from './matching_detail/main-banner'
+import Main_banner from './lesson_detail/main-banner'
 import Sport_type from './matching_detail/sport-type'
 import Hr from './matching_detail/hr'
 import Match_category from './matching_detail/match_category'
@@ -10,6 +10,8 @@ import Favourite from './matching_detail/favourite'
 
 import './common.css'
 import '../layout/lesson_detail_lay.css'
+
+
 
 function Lesson_detail_lay() {
   return (
@@ -28,17 +30,20 @@ function Lesson_detail_lay() {
       Carousel
     </div>
 
-    <Match_category/>
+    <Match_category category='참가비'/>
+    <Match_category category='상세정보'/>
+    <Match_category category='주의사항'/>
+    <Match_category category='추천시설'/>
 
-    <h4 style={{marginBottom: '7px'}}>시설예약 비용</h4>
+    <h4 style={{marginBottom: '7px', fontWeight: 'bold'}}>레슨비/시설비</h4>
     <Cost/>
     <Hr/>
-    <Info/>
+    <Info title='상세정보'/>
     <Hr/>
-    <Info/>
+    <Info title='주의사항'/>
     <Hr/>
 
-    <h4 style={{margin: '40px auto'}}>댓글(20)</h4>
+    <h4 style={{margin: '40px auto'}}>후기(20)</h4>
 
         <div className="comment">
             <Comment/>
@@ -50,7 +55,6 @@ function Lesson_detail_lay() {
 
 <div className="main-banner">
 <Favourite/>
-<Main_banner/>
 <Main_banner/>
 </div>
 

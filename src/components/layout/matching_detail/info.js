@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Info() {
+function Info(props) {
   return (
     <div className="info">
-    <h4>상세정보</h4>
+    <h4>{props.title}</h4>
         <div>
             상세정보 어쩌구 저쩌고상세정보 어쩌구 저쩌고상세정보 어쩌구 저쩌고상세정보 어쩌구 저쩌고상세정보 어쩌구 저쩌고상세정보 어쩌구 저쩌고상세정보 어쩌구 저쩌고
             상세정보 어쩌구 저쩌고상세정보 어쩌구 저쩌고상세정보 어쩌구 저쩌고상세정보 어쩌구 저쩌고상세정보 어쩌구 저쩌고상세정보 어쩌구 저쩌고상세정보 어쩌구 저쩌고
