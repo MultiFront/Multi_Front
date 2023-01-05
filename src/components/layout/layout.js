@@ -16,7 +16,6 @@ const Layout = () => {
 
   return (
     <div className='layout'>
-        <Header />
         <main className='main'>
           <div className='inner'>
               {/* 메인카루셀 영역 */}
@@ -95,7 +94,6 @@ const Layout = () => {
             </div>
           </div>
         </main>
-        <Footer />
     </div>
   )
 

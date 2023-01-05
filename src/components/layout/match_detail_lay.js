@@ -2,7 +2,6 @@ import React from 'react'
 import Comment from './matching_detail/comment'
 import Main_banner from './matching_detail/main-banner'
 import Sport_type from './matching_detail/sport-type'
-import Hr from './matching_detail/hr'
 import Match_category from './matching_detail/match_category'
 import Info from './matching_detail/info'
 import Cost from './matching_detail/cost'
@@ -26,15 +25,18 @@ const Match_detail_lay = () => {
         <h2>제목이 나오는 영역</h2>
         <h5 style={{marginBottom: '30px'}}>작성자(닉네임)</h5>
 
-        <Match_category/>
+        <Match_category category='참가비'/>
+        <Match_category category='상세정보'/>
+        <Match_category category='주의사항'/>
+        <Match_category category='추천시설'/>
 
         <h4 style={{marginBottom: '7px'}}>시설예약 비용</h4>
         <Cost/>
-        <Hr/>
+        <hr/>
         <Info/>
-        <Hr/>
+        <hr/>
         <Info/>
-        <Hr/>
+        <hr/>
 
         <h4 style={{margin: '40px auto'}}>댓글(20)</h4>
 

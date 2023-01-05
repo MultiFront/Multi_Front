@@ -2,7 +2,6 @@ import React from 'react'
 import Comment from './matching_detail/comment'
 import Main_banner from './lesson_detail/main-banner'
 import Sport_type from './matching_detail/sport-type'
-import Hr from './matching_detail/hr'
 import Match_category from './matching_detail/match_category'
 import Info from './matching_detail/info'
 import Cost from './matching_detail/cost'
@@ -37,11 +36,11 @@ function Lesson_detail_lay() {
 
     <h4 style={{marginBottom: '7px', fontWeight: 'bold'}}>레슨비/시설비</h4>
     <Cost/>
-    <Hr/>
+    <hr/>
     <Info title='상세정보'/>
-    <Hr/>
+    <hr/>
     <Info title='주의사항'/>
-    <Hr/>
+    <hr/>
 
     <h4 style={{margin: '40px auto'}}>후기(20)</h4>
 
