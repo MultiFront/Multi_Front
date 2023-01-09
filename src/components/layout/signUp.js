@@ -15,7 +15,7 @@ function SignUp() {
         <div><h1>회원가입</h1></div>
         <span>*필수입력사항</span>
         <hr/>
-        <div className='formBoxTop'>
+        <form className='formBoxTop'>
         <div className='formBox'>
         <InputForm title='아이디*' place='아이디를 입력해주세요'/>
         <PwForm title='비밀번호*' place='영문,숫자,특수문자포함 8자 이상 15자 이하'/>
@@ -27,18 +27,51 @@ function SignUp() {
         </div>
         <div className='formBtn'>
           <button>남자</button>
-        <button>여자</button>
+          <button>여자</button>
         </div>
         <div className='formDate'>
           <span>생년월일</span>
-        <input type={'date'}></input>
+        <div>
+          
+        </div>
         </div>
         <hr/>
-        <div>
-          <span>이용약관동의*</span>
-          <input type={'checkbox'}></input>
+          <div className='agreementTitle'>
+            <span className='agreementAsk'>이용약관동의*</span>
+            <span><input type={'checkbox'}></input></span>
+            <span>전체 동의합니다.</span>
+          </div>
+        <div className='agreement'>
+          <div>
+            <span><input type={'checkbox'}></input></span>
+            <span>이용약관 동의(필수)</span>
+          </div>
+          <div>
+            <span><input type={'checkbox'}></input></span>
+            <span>개인정보 수집•이용 동의(필수)</span>
+          </div>
+          <div>
+            <span><input type={'checkbox'}></input></span>
+            <span>할인 쿠폰 등 혜택/정보 수신 동의(선택)</span>
+          </div>
+          <div>
+            <span><input type={'checkbox'}></input></span>
+            <span>만 14세 이상입니다.(필수)</span>
+          </div>
+          <div className='signUpBtn'>
+            <button style={{width:'350px'}}>가입하기</button>
+          <div className='signUpLink'>
+            <span>
+            이미 가입하셨나요? &nbsp;
+            </span>
+            <a href='#'>
+              로그인하기
+            </a>
+          </div>
+          </div>
+
         </div>
-        </div>
+        </form>
     </div>
     </div>
   )

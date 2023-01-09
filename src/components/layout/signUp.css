@@ -84,3 +84,54 @@ hr {
     border-style: none;
     border: 0.5px solid darkgray;
 }
+
+.agreementAsk {
+    margin-left: 20px;
+}
+
+.agreementTitle {
+    margin-bottom: 5px;
+}
+
+.agreementTitle input {
+    margin-left: 13px;
+    margin-right: 20px;
+}
+
+.agreement span:nth-child(3){
+    font-size: larger;
+    font-weight: bold;
+}
+
+.agreement > div {
+    margin-left: 135px;
+    margin-bottom: 5px;
+}
+
+.agreement > div > span:nth-child(1) {
+    margin-right: 20px;
+}
+
+.agreement > span {
+    margin-left: 100px;
+}
+
+.signUpBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-15%);
+}
+
+.signUpBtn button {
+    height: 50px;
+    border-style: none;
+    margin: 50px auto 20px auto;
+    border-radius: 20px;
+    background-color: aquamarine;
+    color: white;
+}
+
+.signUpLink a {
+    color: rgba(0, 0, 255, 0.24);
+}
