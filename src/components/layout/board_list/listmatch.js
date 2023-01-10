@@ -1,4 +1,4 @@
-import "../layout.css"
+import "../css/layout.css"
 
 const Match = () => {
   return(

@@ -1,6 +1,6 @@
 import React from 'react'
-import './common.css'
-import './signUp.css'
+import './css/common.css'
+import './css/signUp.css'
 import '..\\src\\reset.css'
 
 import InputForm from './signForm/inputForm'

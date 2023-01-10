@@ -1,5 +1,5 @@
-import './header.css'
-import './common.css'
+import './css/header.css'
+import './css/common.css'
 import {Link} from 'react-router-dom';
 const Header = () => {
 
@@ -20,7 +20,7 @@ const Header = () => {
           
             <ul className='nav-main-list-left'>
               <Link to={'/'}><li>홈</li></Link>
-              <Link to={'/'}><li>매칭하기</li></Link>
+              <Link to={'/boardlist'}><li>매칭하기</li></Link>
               <Link to={'/'}><li>시설예약</li></Link>
               <Link to={'/lesson_detail_lay'}><li>레슨예약</li></Link>
             </ul>

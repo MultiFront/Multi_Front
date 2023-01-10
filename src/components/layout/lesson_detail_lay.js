@@ -7,8 +7,8 @@ import Info from './matching_detail/info'
 import Cost from './matching_detail/cost'
 import Favourite from './matching_detail/favourite'
 
-import './common.css'
-import '../layout/lesson_detail_lay.css'
+import './css/common.css'
+import '../css/lesson_detail_lay.css'
 
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import './common.css';
+import './css/common.css';
 import '..\\src\\reset.css';
-import './login.css';
+import './css/login.css';
 import InputBox from './loginForm/InputBox';
 import LoginBtn from './loginForm/loginBtn';
 import NaverLogin from './loginForm/NaverLogin';

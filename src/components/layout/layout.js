@@ -7,8 +7,8 @@ import Category from './board_list/category';
 import Lesson from './board_list/lesson';
 import Match from './board_list/listmatch';
 
-import "./layout.css"
-import './common.css'
+import "./css/layout.css"
+import './css/common.css'
 
 
 
