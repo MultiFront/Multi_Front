@@ -91,18 +91,23 @@
 
 .nav-main-list-right li:first-child{
   padding:12px 25px;
-  background-color: antiquewhite;
+  background-color: #13BD7E;
   border-radius: 30px;
   cursor:pointer;
-  line-height: 24px;
   margin-right: 10px;
   font-size: 0.9em;
 }
 
+.nav-main-list-right li:first-child::after{
+  content: "매칭만들기";
+  vertical-align:text-bottom;
+  color: #fff;
+  line-height: 18px;
+}
 
 .nav-main-list-right li:first-child:hover{
   font-weight: 500;
-  background-color: rgb(253, 217, 169);
+  background-color:#10a26d;
 
 }
 

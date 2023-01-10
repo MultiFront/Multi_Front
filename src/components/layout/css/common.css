@@ -1,5 +1,51 @@
 .inner{
-    width: 1100px;
-    margin: 0 auto;
-    position: relative;
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.mt150{
+  margin-top:150px;
+}
+
+.m0{
+margin:0;
+}
+
+
+/* 메인컬러 값 --primary */
+
+:root {
+--primary:#13BD7E;
+--primary-50: #e8fdf5;
+--primary-100: #b9f8e1;
+--primary-200: #8bf4cd;
+--primary-300: #5defb9;
+--primary-400: #2eeaa5;
+--primary-500: #15d18c;
+--primary-600: #10a26d;
+--primary-700: #0b744e;
+--primary-800: #07462f;
+--primary-900: #021710;
+}
+
+
+/* 기본 폰트 컬러값 --font */
+:root {
+  --font:#333;
+  --font-50: #f2f2f2;
+  --font-100: #d9d9d9;
+  --font-200: #bfbfbf;
+  --font-300: #a6a6a6;
+  --font-400: #8c8c8c;
+  --font-500: #737373;
+  --font-600: #595959;
+  --font-700: #404040;
+  --font-800: #262626;
+  --font-900: #0d0d0d;
   }
+
+
+    
+  

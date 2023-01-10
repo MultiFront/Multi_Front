@@ -122,18 +122,31 @@
 
 .match-btn{
   clear: both;
-  padding: 20px;
-  background-color: antiquewhite;
+  padding: 12px 20px;
+  background-color: #13BD7E;
   width: 140px;
-  height: 10px;
   text-align: center;
   margin: 0 auto;
   border-radius: 50px;
-  line-height: 0.9;
+  cursor: pointer;
 }
 
+.match-btn::after{
+  content: "매칭하러가기";
+  vertical-align: middle;
+  color: #fff;
+}
+
+.match-btn:hover{
+  background-color: #10a26d;
+}
 
 /* 카테고리 */
+
+.align-div .sport{
+  margin:0;
+}
+
 .sport{
   display: flex;
   margin: 0 auto;
@@ -222,7 +235,7 @@
 
 /* 레슨 */
 .lesson{
-  background-color: #eee;
+  background-color: var(--font-50);
 }
 
 .lesson .img .sports-category{
