@@ -10,7 +10,7 @@ const Header = () => {
             <ul>
               <Link to={'/'}><li>공지사항</li></Link>
               <Link to={'/'}><li>고객센터</li></Link>
-              <Link to={'/'}><li>로그인</li></Link>
+              <Link to={'/login'}><li>로그인</li></Link>
               <Link to={'/signUp'}><li>회원가입</li></Link>
             </ul>
           

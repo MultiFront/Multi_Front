@@ -1,0 +1,42 @@
+.mainContent {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginBtn {
+    width: 125.5px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: aquamarine;
+    border-style: none;
+    color: white;
+    margin: 20px 7.5px 7.5px 20px;
+
+}
+
+.inputBox  input {
+    width: 270px;
+    padding-left: 10px;
+    height: 40px;
+    margin: 5px auto;
+    border: 0.5px solid grey;
+}
+
+.mainBtn {
+    margin-bottom: 10px;
+}
+
+.findAccount ul {
+    display: flex;
+}
+
+.findAccount li::after {
+    content: '|';
+    margin: auto 4px;
+}
+
+.findAccount li:last-child::after {
+    display: none;
+}

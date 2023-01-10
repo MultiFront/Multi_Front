@@ -9,6 +9,7 @@ import SignUp from './components/layout/signUp';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Header from './components/layout/header';
 import Footer from './components/layout/footer';
+import Login from './components/layout/login';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/match_detail_lay' element={<Match_detail_lay/>}/>
           <Route path='/lesson_detail_lay' element={<Lesson_detail_lay/>}/>
           <Route path='/signUp' element={<SignUp/>}/>
+          <Route path='/logIn' element={<Login/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>
