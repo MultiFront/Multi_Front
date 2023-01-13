@@ -21,8 +21,8 @@
 
 hr {
     clear: both;
-    height: 4px;
-    background: black;
+    height: 2px;
+    background-color: black;
 }
 
 .inputForm {
@@ -32,8 +32,44 @@ hr {
     position: relative;
     margin-bottom: 25px;
     transform: translate(5%);
+    clear: both;
 }
 
+.checkBtn01 {
+    position: absolute;
+    transform: translate(350%);
+    top: 330px;
+}
+
+.checkBtn01 button {
+    background-color: white;
+    border: 1px solid black;
+    height: 40px;
+}
+
+.checkBtn02 {
+    position: absolute;
+    transform: translate(350%);
+    top: 645px;
+}
+
+.checkBtn02 button {
+    background-color: white;
+    border: 1px solid black;
+    height: 40px;
+}
+
+.checkBtn03 {
+    position: absolute;
+    transform: translate(350%);
+    top: 800px;
+}
+
+.checkBtn03 button {
+    background-color: white;
+    border: 1px solid black;
+    height: 40px;
+}
 .formBox {
     display: flex;
     flex-direction: column;
@@ -74,7 +110,7 @@ hr {
 
 .formDate {
     width: fit-content;
-    transform: translate(5%);
+    transform: translate(40%);
 }
 
 .formDate > input {
@@ -90,15 +126,19 @@ hr {
 }
 
 .agreementTitle {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .agreementTitle input {
-    margin-left: 13px;
-    margin-right: 20px;
+    margin-left: 17px;
+    cursor: pointer;
 }
 
-.agreement span:nth-child(3){
+.agreement input {
+    cursor: pointer;
+}
+
+.agreementTitle span:last-child{
     font-size: larger;
     font-weight: bold;
 }

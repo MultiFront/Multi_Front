@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import './css/common.css'
 import './css/signUp.css'
 import '..\\src\\reset.css'
@@ -9,6 +10,15 @@ import EmailForm from './signForm/emailForm'
 
 
 function SignUp() {
+    function selectAll(selectAll)  {
+      const checkboxes 
+           = document.getElementsByName('chkBox');
+      
+      checkboxes.forEach((checkbox) => {
+        checkbox.checked = selectAll.checked;
+      })
+    
+  }
   return (
     <div className='SigningMain inner'>
     <div className='Signing'>
@@ -18,12 +28,15 @@ function SignUp() {
         <form className='formBoxTop'>
         <div className='formBox'>
         <InputForm title='아이디*' place='아이디를 입력해주세요'/>
+        <span className='checkBtn01'><button type='button'>중복확인</button></span>
         <PwForm title='비밀번호*' place='영문,숫자,특수문자포함 8자 이상 15자 이하'/>
         <PwForm title='비밀번호확인*' place='비밀번호를 한번 더 입력해주세요'/>
         <InputForm title='이름*' place='이름을 입력해주세요'/>
         <InputForm title='닉네임*' place='닉네임을 입력해주세요'/>
+        <span className='checkBtn02'><button type='button'>중복확인</button></span>
         <EmailForm title='이메일*' place='ex) multi_7@campus.com'/>
         <InputForm title='휴대폰*' place='숫자만 입력해주세요'/>
+        <span className='checkBtn03'><button type='button'>중복확인</button></span>
         </div>
         <div className='formBtn'>
           <button>남자</button>
@@ -38,35 +51,45 @@ function SignUp() {
         <hr/>
           <div className='agreementTitle'>
             <span className='agreementAsk'>이용약관동의*</span>
-            <span><input type={'checkbox'}></input></span>
+            <label>
+            <span><input name='chkBox' type={'checkbox'} onclick='selectAll(this)'></input></span>
             <span>전체 동의합니다.</span>
+            </label>
           </div>
         <div className='agreement'>
           <div>
-            <span><input type={'checkbox'}></input></span>
+          <label>
+            <span><input name='chkBox' type={'checkbox'}></input></span>
             <span>이용약관 동의(필수)</span>
+          </label>
           </div>
           <div>
-            <span><input type={'checkbox'}></input></span>
+          <label>
+            <span><input name='chkBox' type={'checkbox'}></input></span>
             <span>개인정보 수집•이용 동의(필수)</span>
+          </label>
           </div>
           <div>
-            <span><input type={'checkbox'}></input></span>
+          <label>
+            <span><input name='chkBox' type={'checkbox'}></input></span>
             <span>할인 쿠폰 등 혜택/정보 수신 동의(선택)</span>
+          </label>
           </div>
           <div>
-            <span><input type={'checkbox'}></input></span>
+          <label>
+            <span><input name='chkBox' type={'checkbox'}></input></span>
             <span>만 14세 이상입니다.(필수)</span>
+          </label>
           </div>
           <div className='signUpBtn'>
-            <button style={{width:'350px'}}>가입하기</button>
+            <button style={{width:'350px', fontSize: 'x-large'}}>가입하기</button>
           <div className='signUpLink'>
             <span>
             이미 가입하셨나요? &nbsp;
             </span>
-            <a href='#'>
+            <Link to={'/login'}>
               로그인하기
-            </a>
+            </Link>
           </div>
           </div>
 

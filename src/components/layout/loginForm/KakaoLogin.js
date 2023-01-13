@@ -9,7 +9,7 @@ class KakaoLogin extends Component {
 
     // Kakao sdk 스크립트 로드 완료시
     kakaoScript.onload = () => {
-      window.Kakao.init("Kakao API KEY");
+      window.Kakao.init("609b728100206ebfcf9954c41d10f15f");
       window.Kakao.Auth.createLoginButton({
         container: "#kakao-login-btn",
         success: (auth) => {

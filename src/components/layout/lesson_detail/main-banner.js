@@ -1,6 +1,6 @@
 import React from 'react'
 import TimeType from './timeType'
-import '../lesson_detail_lay.css'
+import '../css/lesson_detail_lay.css'
 
 function Main_banner() {
   return (

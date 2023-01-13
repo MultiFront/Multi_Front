@@ -8,7 +8,7 @@ import Cost from './matching_detail/cost'
 import Favourite from './matching_detail/favourite'
 
 import './css/common.css'
-import '../css/match_detail_lay.css'
+import './css/match_detail_lay.css'
 
 
 
