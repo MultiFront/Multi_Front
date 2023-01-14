@@ -54,7 +54,7 @@ function Lesson_detail_lay() {
 
 <div className="main-banner">
 <Favourite/>
-<Main_banner/>
+<Main_banner addr='경기도 부천시 어쩌구' date='2022.12.30(수)'/>
 </div>
 
 </main>

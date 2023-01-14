@@ -50,8 +50,8 @@ const Match_detail_lay = () => {
 
     <div className="main-banner">
     <Favourite/>
-    <Main_banner/>
-    <Main_banner/>
+    <Main_banner checked='시설확정' facilName='랜덤 경기장' facilAddr='경기도 부천시' date='2023.2.02(목)' time='11:30'/>
+    <Main_banner checked='시설미확정' facilName='랜덤 매칭' facilAddr='경기도 부천시' date='2023.2.10(금)' time='11:30'/>
     </div>
 
     </main>
