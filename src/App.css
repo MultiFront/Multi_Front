@@ -1,6 +1,112 @@
-.App {
-    font-family: 'Noto Sans KR', sans-serif;
-    color: #333;
-    line-height: 1.4;
-    font-size: 16px;
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+/*  css variables */
+:root {
+  --card-bg-01: #fdefe6;
+  --card-bg-02: #d6e5fb;
+  --card-bg-03: #ceebe9;
+  --card-bg-04: #e2f2b2;
+  --primary-color: #333;
+  --hero-bg: #d6e5fb;
+  --heading-fontSize: 2rem;
+  --small-text-color: #999;
+  --heading-text-color: #0a1d37;
+  --primary:#13BD7E;
+  --primary-50: #e8fdf5;
+  --primary-100: #b9f8e1;
+  --primary-200: #8bf4cd;
+  --primary-300: #5defb9;
+  --primary-400: #2eeaa5;
+  --primary-500: #15d18c;
+  --primary-600: #10a26d;
+  --primary-700: #0b744e;
+  --primary-800: #07462f;
+  --primary-900: #021710;
+  --font:#333;
+  --font-50: #f2f2f2;
+  --font-100: #d9d9d9;
+  --font-200: #bfbfbf;
+  --font-300: #a6a6a6;
+  --font-400: #8c8c8c;
+  --font-500: #737373;
+  --font-600: #595959;
+  --font-700: #404040;
+  --font-800: #262626;
+  --font-900: #0d0d0d;
+}
+
+/* reset browser default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: var(--small-text-color);
+  font-size: 1rem;
+}
+
+h1,
+h2 {
+  font-size: var(--heading-fontSize);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+img{
+  width: 100%;
+}
+
+
+section{
+  padding: 60px 0;
+}
+
+.section__title{
+  color: var(--primary-color);
+}
+
+
+/* .inner{
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+} */
+
+
+.mr-30{
+  margin-right: 30px;
+}
+
+.mb-40{
+  margin-bottom: 40px;
+}
+
+.m40{
+  margin:40px 0px;
 }

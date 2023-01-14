@@ -1,0 +1,79 @@
+.main-content {
+    position: relative;
+    width: 65%;
+}
+
+.main-banner {
+    top: 100px;
+    margin-top: 60px;
+    left: 68%;
+    position: fixed;
+    z-index: 1;
+}
+
+.main-banner > div {
+    max-height: fit-content;
+    width: auto;
+    background-color: rgb(238, 236, 236);
+    padding: 15px 10px;
+    margin-bottom: 15px;
+}
+
+.sport-type button {
+    border-radius: 10%;
+    border-style: none;
+    margin-bottom: 15px;
+}
+
+.check-display {
+    border-radius: 20px;
+    width: 55px;
+    line-height: normal;
+    font-size: smaller;
+    border-style: none;
+    background-color: aquamarine;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.main-banner > div > div > a {
+    color: violet;
+    font-size: small;
+}
+
+.join-btn {
+    width: 170px;
+    height: 40px;
+    color: white;
+    background-color: #333;
+    border-radius: 3px;
+}
+/* 
+.match-category button {
+    border-style: none;
+    background-color: aquamarine;
+    border-radius: 20px;
+    margin-right: 7px;
+    margin-bottom: 50px;
+    color: white;
+} */
+
+.info {
+    margin: 30px auto;
+}
+
+.info h4 {
+    margin: 15px auto;
+    font-size: larger;
+}
+
+.comment > div{
+    background-color: rgb(249, 246, 246);
+    padding: 15px 10px;
+    margin: 10px auto;
+}
+
+.comment h5 {
+    font-size: x-small;
+    margin-bottom: 7px;
+}
