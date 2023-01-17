@@ -5,7 +5,8 @@ const LessonList = ({data}) => {
   return (
     <>
     {
-      data.map((item)=>(
+      data &&
+      data.map((item)=>(   
         <LessonCard item={item}/>
       ))
     }

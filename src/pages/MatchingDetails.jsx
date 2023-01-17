@@ -1,18 +1,26 @@
 import React from 'react'
+import { Container, Row, Col } from 'reactstrap'
 import SportType from './MatchingDetail/SportType'
 import Comment from './MatchingDetail/comment'
 import MainBanner from './MatchingDetail/MainBanner'
 import MatchCategory from './MatchingDetail/MatchCategory'
 import Info from './MatchingDetail/info'
 import Cost from './MatchingDetail/cost'
-import Favourite from './MatchingDetail/favourite'
+import Favorite from '../components/UI/favorite'
+
+
+import '../styles/match_detail_lay.css'
 
 
 const MatchingDetails = () => {
   return (
+
+    <Container>
+    <Row className="m40">
+      <Col lg='8'>
     <div className='match_detail_lay'>
 
-    <main className="main inner">
+    <main>
         <div className='main-content'>
 
         <SportType/>
@@ -29,9 +37,9 @@ const MatchingDetails = () => {
         <h4 style={{marginBottom: '7px'}}>시설예약 비용</h4>
         <Cost/>
         <hr/>
-        <Info/>
+        <Info title={'상세정보'}/>
         <hr/>
-        <Info/>
+        <Info title={'주의사항'}/>
         <hr/>
 
         <h4 style={{margin: '40px auto'}}>댓글(20)</h4>
@@ -43,16 +51,22 @@ const MatchingDetails = () => {
                 <Comment/>
             </div>
     </div>
-
-    <div className="main-banner">
-    <Favourite/>
-    <MainBanner/>
-    <MainBanner/>
-    </div>
-
     </main>
 
-    </div>
+</div>
+    </Col>
+
+    <Col lg='4'>
+      <div className="main-banner">
+      <Favorite/>
+      <MainBanner/>
+      <MainBanner/>
+      </div>
+    </Col>
+
+
+    </Row>
+    </Container>
   );
 }
 

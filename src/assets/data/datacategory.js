@@ -1,4 +1,4 @@
-export const sportsButtons = [
+const sportsButtons = [
   {
     id:1,
     name: "전체",
@@ -37,3 +37,4 @@ export const sportsButtons = [
 ];
 
 
+export default sportsButtons;

@@ -2,7 +2,7 @@
 
 input[type=text], input[type=number] {
   padding: 10px 20px;
-  width:160px;
+  width:80%;
   border:0px;
 }
 
@@ -13,7 +13,8 @@ input:focus {
 
 .wrap-search{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  width: 100%;
 
 }
 .wrapper-search_type{position:relative}
@@ -31,10 +32,10 @@ input:focus {
 }
   
 .wrapper-search_type .btn-search_type.select.location{
-  padding:8px;
   white-space:nowrap;
   overflow:hidden;
-  text-overflow:ellipsis}
+  text-overflow:ellipsis
+}
 
 .wrapper-search_type .btn-search_type.select.on{
   border-color:#13BD7E
@@ -42,6 +43,22 @@ input:focus {
 
 .wrapper-search_type .btn-search_type.select.location.marked{
   color:#13BD7E
+}
+
+.wrapper-search_type .btn-search_type.select{
+  padding:15px 20px;
+  width:98%;
+  height:20%;
+  font-size:16px;
+  position: relative;
+  margin-right:10px;
+}
+
+
+.wrapper-search_type .btn-search_type.select span{
+  display: inline-block;
+  position: absolute;
+  right:8px;
 }
 
 .wrap-slider{position:relative;}
@@ -89,12 +106,18 @@ input:focus {
   transform:translateX(-50%);
   z-index:100;
   margin-top:9px;
-  width:260px;
+  width:370px;
   border-radius:6px;
   border:1px solid #e0e0e0;
   background:#fff;overflow:hidden;
   padding:40px 25px;
 }
+
+.layer-search ul{
+  display: flow-root;
+  padding: 0;
+}
+
 
 .showDis{
   display: block;
@@ -127,21 +150,7 @@ input:focus {
 .layer-search .btn-green{background-color:#13BD7E;color:#fff}
 .layer-search .btn-yellow{background-color:#ffd014;color:#333}
 
-.wrapper-search_type .btn-search_type.select{
-  padding:8px;
-  width:278px;
-  height:44px;
-  font-size:16px;
-  position: relative;
-  margin-right:10px;
-}
 
-
-.wrapper-search_type .btn-search_type.select span{
-  display: inline-block;
-  position: absolute;
-  right:8px;
-}
 
 .layer-search .btn-green,.layer-search .btn-yellow{
   height:51px;
@@ -218,13 +227,11 @@ input:focus {
 input.value {
   border: 0;
   text-align: center;
-  width: 36px;
 }
 
 .box-input {
   align-items: center;
-  vertical-align: center;
-  text-align: right;
+  text-align: center;
   margin:20px 0px;
 }
 
@@ -274,7 +281,7 @@ input.value {
 
 
 .filter-btn{
-  width: 80px;
+  width: 100px;
   margin: 0px;
   border-color: var(--primary);
   border-style: solid;
@@ -362,7 +369,18 @@ input.value {
   margin-right: 0px;
 }
 
+.list .facility{
+background-color: var(--font-50);
+}
+
 .wrapper{
   display: flex;
   justify-content: space-evenly;
 }
+
+
+.btn-list{
+  margin-top:40px;
+}
+
+

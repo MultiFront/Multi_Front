@@ -1,4 +1,9 @@
-
+.containerC {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .slider {
   position: relative;
   width: 200px;

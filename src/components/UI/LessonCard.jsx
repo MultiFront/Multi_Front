@@ -8,7 +8,7 @@ const LessonCard = ({item}) => {
   return (
     <Col lg='3' md='4' className='mb-20'>
     <div className="lesson">
-      <p className="img"><span className="sports-category">{item.category}</span></p>
+     <Link to={`/lesson/${item.id}`}><p className="img"><span className="sports-category">{item.category}</span></p></Link>
       <div>
       <Link to={`/lesson/${item.id}`}><p className="fac-title">{item.title}</p></Link>
         <p className="review-count">이용자 리뷰 10개</p>

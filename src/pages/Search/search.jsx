@@ -3,7 +3,7 @@ import SearchDateTime from './searchdate'
 import SearchPeople from './searchppl'
 import SearchLocation from './searchlocation'
 import SearchOption from './searchoption01'
-
+import { Row, Col } from 'reactstrap'
 
 const Search = () => {
   const [regionToggle, setRegionToggle] = useState(false);
@@ -46,14 +46,24 @@ const Search = () => {
 
 
   return (
+    <Row>
   <div className='wrapper'>
     <div className='wrap-search'>
+      <Col ig='3'>
         <SearchLocation regionToggle={regionToggle} controlToggle={controlToggle}/> 
+      </Col>
+      <Col ig='3'>
         <SearchPeople peopleToggle={peopleToggle}  controlToggle={controlToggle}/>
+      </Col>
+      <Col ig='3'>
         <SearchDateTime dateToggle={dateToggle} controlToggle={controlToggle}/>
+      </Col>
     </div> 
+    <Col ig='3'>
       <SearchOption filterToggle={filterToggle} controlToggle={controlToggle}/>
+    </Col>
   </div>
+  </Row>
   )
 }
 

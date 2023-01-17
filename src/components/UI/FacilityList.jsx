@@ -4,8 +4,8 @@ import FacilityCard from './FacilityCard'
 const FacilityList = ({data}) => {
   return (
     <>
-    {
-      data.map((item)=>(
+    {data &&
+      data.map((item)=>(   
         <FacilityCard item={item}/>
       ))
     }

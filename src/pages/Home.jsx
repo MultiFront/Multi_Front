@@ -8,50 +8,76 @@ import { Container, Row, Col } from "reactstrap"
 import { Link } from "react-router-dom"
 import { motion } from 'framer-motion'
 import SportsData from '../assets/data/SportsData'
-
-
 import Services from "../services/Services";
-
-
+import MatchingData from "../assets/data/MatchingData";
+import lessonData from "../assets/data/lessonData";
 
 import MatchingList from "../components/UI/MatchingList";
 import LessonList from "../components/UI/LessonList";
 import FacilityList from "../components/UI/FacilityList";
 import ListMatchList from "../components/UI/ListMatchList";
 
+import sportsButtons from "../assets/data/datacategory";
+import { getMatchingData, filterMatchingData, getLessonData, filterLessonData, getSportsData,filterSportsData } from "./Filter/filtertfun";
+import FilterHome from "./Filter/filter_home";
 
 const Home = () => {
 
-  const [trendingProducts, setTrendingProducts] = useState([]);
-  // const [bestSalesProducts, setBestSalesProducts] = useState([]);
-  // const [mobileProducts, setMobileProducts] = useState([])
-  // const [wirelessProducts, setWirelessProducts] = useState([])
+  const [ matching, setMatching] = useState([]);
+  const [ lesson, setLesson] = useState([]);
+  const [ facilty, setFacilty] = useState([]);
 
 
 
   useEffect(()=>{
-    const filteredTrendingProducts = SportsData.filter(
+    const filteredMatching = MatchingData.filter(
+      (item) => item.category
+    );    
+
+    const filteredLesson = lessonData.filter(
       (item) => item.category
     );
-    
-    // const filteredBestProducts = products.filter(
-    //   (item) => item.category === 'sofa'
-    // );
 
-    // const filteredMobileProducts = products.filter(
-    //   (item) => item.category === 'mobile'
-    // );
-
-    // const filteredWirelessProducts = products.filter(
-    //   (item) => item.category === 'wireless'
-    // );
+    const filteredFacilty = SportsData.filter(
+      (item) => item.category
+    );
 
 
-    setTrendingProducts(filteredTrendingProducts);
-    // setBestSalesProducts(filteredBestProducts);
-    // setMobileProducts(filteredMobileProducts);
-    // setWirelessProducts(filteredWirelessProducts);
+    setMatching(filteredMatching);
+    setLesson(filteredLesson);
+    setFacilty(filteredFacilty);
+
   },[]);
+
+
+  function onMenu(e) {
+    let sportsCategory = e.target.value;
+    if(sportsCategory !== "all"){
+      setMatching(filterMatchingData(sportsCategory)) 
+    }else{
+      setMatching(getMatchingData())
+    }
+  }
+
+  function onMenuLesson(e) {
+    let sportsCategory = e.target.value;
+    if(sportsCategory !== "all"){
+      setLesson(filterLessonData(sportsCategory)) 
+    }else{
+      setLesson(getLessonData())
+    }
+  }
+
+  function onMenuFacility(e) {
+    let sportsCategory = e.target.value;
+    if(sportsCategory !== "all"){
+      setFacilty(filterSportsData(sportsCategory)) 
+    }else{
+      setFacilty(getSportsData())
+    }
+  }
+
+
 
   return (<Helmet title={"Home"}>
       <section className="hero__section">
@@ -87,8 +113,14 @@ const Home = () => {
               <Col lg='12' className="text-center">
                 <p className='match-b-title'>랫플 매칭이 총 000건 성사 되었습니다!</p>
               </Col>
-                <MatchingList data={trendingProducts}/>
+              <FilterHome
+                sportsButtons={sportsButtons}          
+                onMenu={onMenu}
+                />
+                <MatchingList data={matching}/>
+                <div>
               <motion.p whileHover={{scale:1.2}} className='match-btn'></motion.p>
+              </div>
             </Row>
         </Container>
       </section>
@@ -99,8 +131,11 @@ const Home = () => {
             <Col lg='12' className="text-center">
               <h2 className="section__title">평점 좋은 시설</h2>
             </Col>
-
-            <FacilityList data={trendingProducts}/>
+            <FilterHome
+                sportsButtons={sportsButtons}          
+                onMenu={onMenuFacility}
+                />
+            <FacilityList data={facilty}/>
           </Row>
           </Container>
       </section>
@@ -111,8 +146,11 @@ const Home = () => {
             <Col lg='12' className="text-center mb-5">
               <h2 className="section__title">평점 좋은 레슨</h2>
             </Col>
-
-            <LessonList data={trendingProducts}/>
+            <FilterHome
+                sportsButtons={sportsButtons}          
+                onMenu={onMenuLesson}
+                />
+            <LessonList data={lesson}/>
         </Row>
         </Container>
       </section>
@@ -151,7 +189,7 @@ const Home = () => {
             </Col>
         </Row>
 
-          <ListMatchList data={trendingProducts} />
+          <ListMatchList data={matching}/>
         </Container>
       </section>
 

@@ -7,9 +7,9 @@ const MatchingList = ({data}) => {
 
   return (
     <>
-    {
+    {data &&
       data.map((item)=>(     
-        <MatchingCard item={item}/>
+        <MatchingCard item={item} key={item.id}/>
       ))
     }
     </>

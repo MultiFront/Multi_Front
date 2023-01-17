@@ -1,7 +1,6 @@
 import React from "react";
 import MultiRangeSlider from "../multiRangeSlider/MultiRangeSlider";
 
-
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css'; 
 
@@ -53,7 +52,6 @@ const SearchDateTime = ({dateToggle, controlToggle}) => {
     </div> 
       
     </div>
-
 
   )
 
