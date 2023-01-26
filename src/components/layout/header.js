@@ -26,7 +26,7 @@ const Header = () => {
             </ul>
 
             <ul className='nav-main-list-right'>
-              <Link to={'/match_detail_lay'}><li><p>매칭만들기</p></li></Link>
+              <Link to={'/match_detail_lay'}><li><p></p></li></Link>
               <li><p className='bell'><a href='/'><span className="material-symbols-outlined">notifications</span></a></p><span className='count-num'>10</span></li>
             </ul>
 

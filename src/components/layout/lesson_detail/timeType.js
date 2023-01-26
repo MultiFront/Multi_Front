@@ -2,11 +2,9 @@ import React from 'react'
 
 function TimeType(props) {
   return (
-        <button className='timeTypeBtn'
-         style={{backgroundColor : props.color}}
-        >
-          {props.time}
-        </button>
+        <input type='button' className='timeTypeBtn'
+         style={{backgroundColor : props.color}} value={props.time}
+        />
   );
 }
 

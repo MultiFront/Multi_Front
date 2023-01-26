@@ -13,13 +13,13 @@ class NaverLogin extends Component {
     naverScript.onload = () => {
       const naverLogin = new window.naver.LoginWithNaverId({
         clientId: "nlgdIwCIkJWqjjJYv6n7",
-        callbackUrl: "http://localhost:3000/login",
+        callbackUrl: "http://localhost:3000",
         callbackHandle: true,
         isPopup: false, // 로그인 팝업여부
         loginButton: {
           color: "green", // 색상(white, green)
           type: 3, // 버튼타입(1,2,3)
-          height: 60, // 배너 및 버튼 높이
+          height: 50, // 배너 및 버튼 높이
         },
       });
 
@@ -49,3 +49,4 @@ class NaverLogin extends Component {
 }
 
 export default NaverLogin;
+

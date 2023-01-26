@@ -8,7 +8,7 @@ import Cost from './matching_detail/cost'
 import Favourite from './matching_detail/favourite'
 
 import './css/common.css'
-import '../css/lesson_detail_lay.css'
+import './css/lesson_detail_lay.css'
 
 
 
@@ -54,7 +54,7 @@ function Lesson_detail_lay() {
 
 <div className="main-banner">
 <Favourite/>
-<Main_banner/>
+<Main_banner addr='경기도 부천시 어쩌구' date='2022.12.30(수)'/>
 </div>
 
 </main>

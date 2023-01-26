@@ -45,12 +45,12 @@ const Layout = () => {
                 <Matching />
               </div>
             
-            <p className='match-btn'>매칭하러가기 +</p>
+            <p className='match-btn'></p>
           </div>
          
           {/* 메인 시설 리스트 영역 */}
           <div className='bg'>
-            <div className='inner'>
+            <div className='inner align-div'>
               <h3>평점 좋은 시설</h3>
                 <Category />
                 <div className='match-list-div'>
@@ -64,7 +64,7 @@ const Layout = () => {
             </div>
           </div>
           {/* 메인 레슨 리스트 영역 */}
-          <div className='inner'>
+          <div className='inner align-div'>
             <h3>마감 직전 레슨</h3>
               <Category />
               <div className='match-list-div'>
